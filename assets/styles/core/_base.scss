@@ -1,0 +1,16 @@
+// -------------------------------------
+//   Base
+// -------------------------------------
+// ----- Global defaults for Base-level tags (body, p, etc.)
+// -------------------------------------
+
+// ----- Uncomment if project will be using rems ----- //
+// html {
+//   font-size: 62.5%;
+// }
+
+body {
+  background: url('../imgs/bg.jpg') center center repeat;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 24px;
+}

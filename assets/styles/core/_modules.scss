@@ -1,0 +1,165 @@
+#hero .container {
+  background: url('../imgs/hero.jpg') center center no-repeat;
+  padding-top: 39.13%;  //450px/800px = 0.5625
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+  max-width: 100%;
+  width: 1150px;
+}
+
+#about {
+  text-align: center;
+  .container {
+    padding-top: 4em;
+    padding-bottom: 5.5em;
+  }
+  h2,span {
+    color: #444444;
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 5px;
+  }
+  span {
+    font-size:  1em;
+    font-style: italic;
+
+  }
+  p {
+    margin:  1em 20%;
+    &:nth-of-type(1) {
+      margin-top: 70px;
+    }
+  }
+
+  .horz-line {
+    margin: 4% auto;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    span {
+      display: inline-block;
+      &:before, &:after {
+        border-top: 1px solid #d3d3d3;
+        content: " ";
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: .8em;
+        width: 40%;
+      }
+      &:after {
+       right: 0;
+       left: auto;
+      }
+    }
+  }
+}
+
+#gallery .container {
+  padding: 0;
+}
+
+
+#contact {
+  .container {
+    padding: 0;
+    color: #FFF;
+    min-height: 600px;
+    border-top: 8px solid #000;
+  }
+  .left-grey-content {
+    background-color: #252525;
+    padding: 1.5em;
+    height: 650px;
+    background: url("../imgs/IMG_0051.jpg") center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    p{
+      font-size: .8em;
+      line-height: 1.5em;
+      color: rgba(255,255,255, 0.5);
+    }
+  }
+  .right-grey-content {
+    background-color: #363636;
+    padding: 1em;
+    height: 650px;
+    h3 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    label {
+      font-size: 1em;
+
+    }
+    input,textarea {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #888888;
+      display: block;
+      margin-bottom: 2em;
+      padding: 0;
+      outline: none !important;
+    }
+  }
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 940px) {
+  #contact  .left-grey-content {
+    p {
+      font-size: .7em;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #hero .container {
+    height: auto;
+    padding-top: 30%;
+    max-height: 20%;
+  }
+
+  #about {
+    .container {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    h2, span {
+      font-size: .7em;
+    }
+    p {
+      margin:  1em 5%;
+    }
+  }
+
+  .horz-line span {
+    &:before, &:after {
+      top: 1em;
+    }
+  }
+
+  #contact {
+    .container {
+      .left-grey-content, .right-grey-content {
+        height: auto;
+      }
+    }
+    p {
+      font-size: .6em;
+    }
+  }
+
+  footer {
+    .text-right {
+      text-align: left;
+    }
+  }
+}
